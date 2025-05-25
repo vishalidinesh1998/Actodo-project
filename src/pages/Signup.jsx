@@ -33,16 +33,19 @@ function Signup(props) {
                         placeholder="username"
                         onChange={handleusername}
                         className=" w-52 border rounded border-black p-2 bg-transparent"
+                        required
                     ></input>
                     <input type="text"
                         placeholder="Password"
                         onChange={handlepassword}
                         className="  w-52 border rounded border-black p-2 bg-transparent"
-                    ></input>
+                        required
+                  ></input>
                     <input type="text"
                         placeholder="Confirm Password"
                         className="  w-52 border rounded border-black p-2 bg-transparent"
-                    ></input>
+                    required
+                   ></input>
                 </div>
                 <button className="bg-orange-500 p-2 border rounded mt-5"
                 onClick={addusers}

@@ -23,6 +23,11 @@ const navigate=useNavigate();
 function checkuser() {
     var userfound = false;
 
+        if (eusername.trim() === "" || epassword.trim() === "") {
+        alert("Please enter both username and password");
+        return;
+    }
+
     users.forEach(function(item){
         if(item.username === eusername && item.password === epassword){
             console.log("Login Successful");
